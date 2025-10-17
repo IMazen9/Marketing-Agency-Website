@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.header .content-box{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/home2.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu{
+    display: inline-flex;
+}
+
+.menu img{
+    height: 120px;
+    margin: 10px 0 0 30px;
+    cursor: pointer;
+}
+
+.menu button{
+    padding: 5px 20px;
+    background: #ff4d73;
+    color: white;
+    font-size: 16px;
+    border:0;
+    position:absolute;
+    right:10%;
+    top:7%
+}
+
+.menu button .fa-solid{
+    margin-right: 10px;
+}
+
+.banner-text{
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    margin: 10% auto 0;
+}
+
+.banner-text h2{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .banner-text h2{
+    font-size: 40px;
+    }
+}
+
+
+.banner-text p {
+    font-size: 17px;
+    margin: 20px 0 50px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ff4d73 ;
+    display: block;
+    padding: 10px;
+    width: 180px;
+    margin: auto;
+    background: #ff4d73;
+    transition: 0.5s;
+}
+
+.banner-text a:hover{
+    background: transparent;
+}
+
+        /* service section */
+
+.content-box {
+    background: #f4f3ff;
+    height:900px;
+    width:100%;
+    
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+h1::after{
+    content:'';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin:20px auto 50px
+}
+
+.services .icon .fa-brands,
+.services .icon .fa-solid{
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 18px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #ff4d73;
+    border-radius: 50%;
+    color: #ff4d73;
+}
+
+.services p{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+    padding: 20px;
+}
+
+.services span{
+    color: #ff4d73;
+}
+
+.services .col-md-3:hover{
+    background: #ff4d73;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+
+.services .col-md-3:hover .icon .fa-brands,
+.services .col-md-3:hover .icon .fa-solid {
+    color: #fff;
+    border-color: #fff;
+    transition: 0.5s;
+}
+
+.services .col-md-3:hover p{
+    color: #fff;
+}
+.services .col-md-3:hover span{
+    color: #fff;
+}
+
+
+/*  features */
+
+.feature h2{
+    margin-top: 20px;
+    position: relative
+}
+.feature h2::after{
+    content:'';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin:10px auto 50px;
+    position:absolute;
+    left: 14px;
+}
+
+.feature ul{
+    margin-top: 30px;
+    margin-left:50px ;
+    list-style: none;
+}
+
+.feature ul li{
+    margin-top: 16px;
+    position: relative;
+}
+
+.feature ul li::after{
+    content: '';
+    height: 7px;
+    width: 7px;
+    background:#ff4d73;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+    left: -25px;
+}
+
+.feature img{
+    margin-top: 130px;
+    height: 75%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    border-radius: 15px;
+    border: 3px solid #ff4d73;
+}
+
+
+
+/* footer */
+
+.contact-form{
+    padding: 15px;
+}
+
+.form-control{
+    border: none;
+    box-shadow: none;
+
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.contact-form button{
+    border: none;
+    background: #ff4d73;
+    box-shadow: none;
+}
+
+.form-group{
+    padding: 10px 0;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical; /* allows user to resize only vertically */
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* On focus (when user clicks inside it) */
+textarea:focus {
+    border-color: #ff4d73;
+    box-shadow: 0 0 5px rgba(255, 77, 115, 0.4);
+    background-color: #fff;
+}
+
+.contact-info .follow{
+    background: #fff;
+    padding: 10px;
+    margin: 21px;
+}
+
+.follow .fa-solid,
+.follow .fa-brands{
+    font-size: 20px;
+    margin: 10px;
+    color: #ff4d73;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.follow .fa-brands{
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.follow .fa-brands:hover{
+    font-size: 25px;
+    color: aqua;
+}
+
+hr{
+    color: #ff4d73;
+    height: 5px;
+}
+.my-name{
+    padding: 10px;
+    text-align: center;
+}
+
+.my-name .fa-solid{
+    color: #ff4d73;
+}
+
+.footer,.feature,.services{
+    margin-top: 4%;
+    padding-bottom:20px ;
+}
+
+@media (max-width: 768px) {
+  .feature  {
+    margin: 200px 0;
+    margin-top: 610px;
+  }
+}
